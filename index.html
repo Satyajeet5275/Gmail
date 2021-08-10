@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Gmail</title>
+</head>
+<body>
+    
+      <div class="header">
+            <div class="header_left">
+                       <button>
+                <i class = "material-icons">menu</i>  </button>  
+                          
+                <img src="glogo.jpg" style="width:110px;object-fit:contain;"alt="">
+            </div>
+            <div class="header_middle">
+                <div class="input1">
+                    <button>
+                    <i class="material-icons">search</i>
+                </button> 
+                <input type="text" placeholder="Search mail">
+                <button>
+                    <i class = "material-icons">tune</i> </button>  
+            </div>
+             </div>
+            <div class="header_right">
+                <button>
+                <i class= "material-icons">help_outline</i>
+                </button>
+                <button>
+                <i class= "material-icons">settings</i></button><button>
+                <i class= "material-icons">apps</i></button>
+                <button>
+                <i class= "material-icons">account_circle</i>
+            </button>
+            </div>
+      </div>
+      <div class="app">
+      <div class="sidebar">
+          <div class="sidebar_button">
+              <button class="compose">
+                            
+              </button>
+          </div>
+          <div class="options">
+              <div class="option">
+                  <span>
+                <i class= "material-icons" id="m">inbox</i></span>
+                <span style="font-weight: 400;font-size:15px;">Inbox</span>
+           
+              </div>
+              <div class="option">
+                <span>
+                <i class= "material-icons" id="m">star</i></span>
+                <span style="font-weight: 400;font-size:15px;">Starred</span>
+           
+              </div>
+              <div class="option">
+                  <span>
+                <i class= "material-icons" id="m">watch_later</i></span>
+                <span style="font-weight: 400;font-size:15px;">Snoozed</span>
+           
+              </div>
+              <div class="option">
+                  <span>
+                <i class= "material-icons" id="m">send</i></span>
+                <span style="font-weight: 400;font-size:15px;">Sent</span>
+           
+              </div>
+              <div class="option">
+                  <span>
+                <i class= "material-icons" id="m">description</i></span>
+                <span style="font-weight: 400;font-size:15px;">Drafts</span>
+           
+              </div>
+              <div class="option">
+                <span>
+              <i class= "material-icons" id="m">expand_more</i></span>
+              <span style="font-weight: 400;font-size:15px;">More</span>
+         
+            </div>
+          </div>
+          <div class="meet">
+              <span style="font-weight: 600;font-size:15px; padding-left: 20px;">Meet</span>
+              
+              <div class="option">
+                <span>
+              <i class= "material-icons" id="m">videocam</i></span>
+              <span style="font-weight: 400;font-size:15px;">New Meeting</span>
+            </div>
+            
+          <div class="option">
+            <span>
+          <i class= "material-icons" id="m">
+            keyboard
+            </i></span>
+          <span style="font-weight: 400;font-size:15px;">Join a meeting</span>
+     
+        </div>
+            </div>
+           
+          <div class="hangouts">
+            <span style="font-weight: 600;font-size:15px; padding-left: 20px;">Hangouts</span>
+            <div class="option">
+              <span style="padding-top: 10px;">
+            <i class= "material-icons">account_circle</i></span>
+            <span style="font-weight: 400;font-size:15px; padding-top: 10px; ">Username</span>
+            <i class= "material-icons" style="padding-top: 10px; margin-left: 55px  ;">add</i>
+          </div>
+          </div>
+      </div>
+      
+      <div class="body">
+          <div class="body_header">
+            <div class="left">
+              
+              <button id="check"><i class= "material-icons"  >check_box_outline_blank</i></button>
+                <button id="arrow">
+              <i class= "material-icons" >arrow_drop_down</i></button>
+                <button> <i class= "material-icons" >refresh</i></button>
+                <button> <i class= "material-icons"  >more_vert</i></button>
+            <i class= "material-icons" ></i>
+          </div>
+          <div class="right">
+            
+            <span> 1-50 of 897 </span>
+            <button> <i class= "material-icons" >chevron_left</i></button>
+            <button> <i class= "material-icons" >chevron_right</i></button>
+            <button> <i class= "material-icons" >keyboard</i></button>
+            <button id = "arrow"> <i class= "material-icons"  >arrow_drop_down</i></button>
+          </div>
+          </div>
+          
+          <div class="body_tabs">
+            <div class="primary">
+              <span ><i class="material-icons">inbox</i> </span> 
+              <span style="font-weight: 400;font-size:15px;">Primary</span>
+            </div>
+            <div class="social">
+              <i class="material-icons">people</i>
+              <span style="font-weight: 400;font-size:15px;">Social</span>
+            </div>
+            <div class="promotion">
+              <i class="material-icons">local_offer</i>
+              <span style="font-weight: 400;font-size:15px;">Promotion</span>
+            </div>
+          </div>
+          <div class="mail_sc">
+              <div class="mail">
+                  <div class="name">
+                        <i class="material-icons">check_box_outline_blank </i> 
+                        <i class="material-icons"> star_border</i> 
+                        <span>GitHub</span>
+                  </div>
+                  <div class="details">
+                    <span>🚀 Reminder: Your GitHub launch code</span>
+              
+                  </div>
+                  <div class="time">
+                    <span style = "font-size: 12px;">4.55 PM</span>
+                  </div>
+              </div>
+              <div class="mail">
+                <div class="name">
+                      <i class="material-icons">check_box_outline_blank </i> 
+                      <i class="material-icons"> star_border</i> 
+                      <span>GitHub</span>
+                </div>
+                <div class="details">
+                  <span>🚀 Reminder: Your GitHub launch code</span>
+            
+                </div>
+                <div class="time">
+                  <span style = "font-size: 12px;">4.55 PM</span>
+                </div>
+            </div>
+            
+
+     
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+<div class="mail">
+  <div class="name">
+        <i class="material-icons">check_box_outline_blank </i> 
+        <i class="material-icons"> star_border</i> 
+        <span>GitHub</span>
+  </div>
+  <div class="details">
+    <span>🚀 Reminder: Your GitHub launch code</span>
+
+  </div>
+  <div class="time">
+    <span style = "font-size: 12px;">4.55 PM</span>
+  </div>
+</div>
+
+          </div>
+      </div>
+    </div>
+    
+</body>
+</html>

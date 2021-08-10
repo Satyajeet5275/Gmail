@@ -1,0 +1,358 @@
+body{
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+.header
+{
+    display:flex ;
+    flex-direction: row;
+    position: fixed;
+    top:0;
+    width:100vw;
+    align-items: center;
+    z-index:999;
+    height:8vh;
+    border-bottom: 0.7px solid rgb(235, 235, 235);
+    background-color: white;
+    padding-left: 20px;
+}
+.header_left
+{
+    flex:0.25;
+    min-width: 200px;
+    max-width: 220px;
+    padding:5px;
+}
+.header_left img
+{
+    margin-left: 15px;
+    cursor: pointer;
+}
+ button
+{
+        border:none;
+        width:40px;
+        height:40px;
+        text-align: center;
+        background-color: transparent;
+}
+ button:hover
+{
+    background-color: rgb(238, 238, 238);
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.header_middle
+{
+    flex:0.70;
+    height: 89%;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    padding:5px;
+}
+
+.input1
+{
+    width:80%;
+    display: flex;
+    height: 90%;
+    margin-left: -5px;
+    padding-right:10px;
+    
+    border-radius: 10px;
+    background-color: whitesmoke;
+    align-items: center;
+    color:rgb(86, 86, 86);
+}
+.input1 input{
+    border:none;
+    outline:none;
+    background:transparent;
+    width: 85%;
+}
+i{
+    color:rgb(88, 88, 88);
+}
+.header_right
+{
+    flex:0.10;
+    display: flex;
+    justify-content: flex-end;
+    height: 55%;
+    align-items: center;
+    min-width: 200px;
+    padding:20px;
+}
+.app
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 56px;
+    width:100w;
+    height:92vh;
+    /* border: 3px solid gray; */
+   
+}
+.sidebar
+{
+    flex:0.30;
+    max-width:250px;
+    display: flex;
+    position: sticky;
+    left:0;
+    
+    top:-55px;
+    flex-direction: column;
+    /* border: 3px solid gray; */
+}
+.compose
+{
+    background-image: url('button.png');
+    width:62%;
+    height:45px;
+    border-radius: 60px;
+    box-shadow: 1px 2px 3px 1px lightgray;background-size:contain;margin-top:15px;margin-left: 10px;
+    transition: 200ms ease-in;
+}
+.compose:hover
+{
+    width:62%;
+    height:45px;
+    border-radius: 60px;
+    box-shadow: 3px 4px 10px 1px lightgray;
+}
+.options
+{
+    display: flex;
+    height: 35%;
+    width:100%;
+    /* border: 1px solid gray; */
+    border-bottom: 1px solid whitesmoke;
+    margin-top: 7px;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.option
+{
+    width: 90%;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: 100ms;
+}
+.option:hover,#m:hover {
+    border-radius:20px;
+    transform: scale(1.05);
+    background-color: rgba(252,232,230); 
+    color:rgba(217,48,37);
+    font-weight: 900;
+    cursor: pointer;
+}
+.option span
+{
+margin-left: 15px;
+}
+.meet
+{
+    width:95%;
+    height: max-content;
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.hangouts
+{
+    width:95%;
+    height: max-content;
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.body
+{
+flex:0.8;
+display: flex;
+flex-direction: column;
+margin-top: 5px;
+height:93vh;
+/* border: 1px solid gray; */
+}
+.body_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: 40px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+
+}
+.left{
+    flex:0.5;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+}
+.left #check
+{
+    width:25px;
+    height:35px;
+    text-align: center;
+}
+ #arrow
+{
+    width:20px;
+    height:35px;
+}
+ #arrow i
+{
+    font-size: 15px;
+}
+ #arrow:hover
+{
+    background-color: whitesmoke;
+    border-radius:0px;
+}
+.left #check i
+{
+    font-size: 22px;
+    font-color:gray;
+}
+.left #check:hover
+{
+    background-color: whitesmoke;
+    border-radius:0px;
+}
+.right{
+    flex:0.4;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+.body_tabs
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:100%;
+    height:60px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.primary
+{
+    flex:0.3;
+    height: 68%;
+    padding: 10px 10px 10px 0px;
+    display: flex;
+    align-items:center;
+}
+.primary:hover {
+    background-color: whitesmoke;
+    color:rgba(217,48,37);
+    font-weight: 900;
+    border-bottom: 3.5px solid rgba(217,48,37);
+}
+.primary span
+{
+    margin-left:10px;
+}
+.social
+{
+    flex:0.3;
+    height: 68%;
+    padding:10px;
+    display: flex;
+    align-items:center;
+
+}
+.social:hover{
+    background-color: whitesmoke;
+    color:rgb(24, 173, 231);
+    font-weight: 900;
+    border-bottom: 3.5px solid rgb(24, 173, 231);
+}
+.social span
+{
+    margin-left:10px;
+
+}
+.promotion
+{
+    flex:0.4;
+    height: 68%;
+    padding:10px;
+    display: flex;
+    align-items:center;
+
+}
+.promotion:hover{
+    background-color: whitesmoke;
+    color:green;
+    border-bottom: 3.5px solid green;
+    
+}
+.promotion span
+{
+    margin-left:10px;
+
+}
+.mail_sc
+{
+    height:75vh;
+    width:100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    
+}
+.mail
+{
+    width:100%;
+    min-height: 40px;
+    height:40px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mail:hover{
+    box-shadow: 1px 2px 3px 1px gray;
+}
+.name
+{
+    flex:0.27;
+    display: flex;
+    align-items: center;
+    height:50%;
+  
+}
+.details
+{
+    flex:0.7;
+    display: flex;
+    align-items: center;
+    padding-left:20px;
+    height:50%;
+  
+}
+.time
+{
+    flex:0.15;
+    display: flex;
+    justify-content: flex-end;
+    padding-right:5px;
+    align-items: center;
+    height:50%;
+    
+}
